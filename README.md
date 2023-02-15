@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: I looked at the developer inspector and saw it was 500 status code so I looked at server logs and noticed it was something to do with the controller and then I noticed Toys.create had been used instead of Toy.create
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: I looked at the developer inspector and saw it was 500 status code so I looked at server logs and it said no content so I looked at the update controller and noticed render json: was missing so I added this in
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: I looked at the developer inspector and saw it was a 404 status code which means there is no route set up for this so I went to the routes file and added :destory to resources
